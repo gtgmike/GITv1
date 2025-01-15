@@ -1,31 +1,38 @@
+ /* Version mobile */
 @media (max-width: 768px) {
-    body {
-        width: 100%;
-        padding: 10px;
-    }
-
-    header {
-        text-align: center;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-    }
-
-    main {
-        margin: 0;
-        padding: 10px;
-    }
-
-    footer {
-        font-size: 12px;
-        text-align: center;
+    p a {
+        font-size: 16px; /* Réduction de la taille de police */
+        padding: 0 3%;
     }
 
     img {
-        max-width: 100%;
+        width: 50%; /* Ajustement pour que les images soient plus grandes */
+    }
+
+    h1 a img {
         height: auto;
+        width: 60%;
+        background-color: blue; /* Maintien du fond bleu */
+    }
+
+    body img {
+        height: auto;
+        width: 100%; /* Images adaptatives */
+        background-color: aqua; /* Maintien du fond aqua */
+    }
+
+    body a img {
+        width: 80%; /* Taille ajustée */
+        padding: 5%;
+    }
+
+    fieldset {
+        background-color: darkgray; /* Maintien de la couleur de fond */
+        padding: 5%; /* Ajout d'un espace interne pour les petits écrans */
+    }
+
+    form img {
+        width: 40%; /* Ajustement pour mobile */
     }
 }
+
