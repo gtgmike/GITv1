@@ -1,0 +1,34 @@
+git clone https://github.com/gtgmike/GITproject.git
+git checkout -b master
+mkdir html
+mkdir css
+touch css/stylesheet.css
+touch css/mobile.css
+touch html/index.html
+git add .
+git config user.email "madelmike111@gmail.com"
+git config user.name "gtgmike"
+git commit -m "Création du master et de l'arborésence"
+git checkout -b css
+git add .
+git commit -m "Initialisation du padding et de la marge à 0"
+git checkout master
+git merge css
+git push origin master
+git checkout -b cssv2
+git commit -m "Première proposition de style CSS"
+git push origin cssv2
+git add .
+git  commit -m "Ajustement des images dans le body"
+git push origin cssv2
+git checkout css
+git checkout -b cssv3
+git add .
+git commit -m "Nouvelle proposition complète de style CSS"
+git push origin cssv3
+git checkout master
+git pull origin master
+git status
+git diff
+git merge cssv3
+git pull origin master
