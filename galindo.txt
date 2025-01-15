@@ -1,0 +1,61 @@
+creation de la v1
+
+git clone https://github.com/gtgmike/GITv1.git   
+cd GGITv1 
+git pull origin master
+git checkout master
+git checkout -b mobile_css_branch
+cd css
+nano mobile.css
+git add css/mobile.css
+git commit -m "mobile.css"
+git config user.email "jg767119@gmail.com"
+git config user.name "jclatino10"
+git commit -m "mobile.css"
+git push origin mobile_css_branch
+git checkout master
+git merge mobile_css_branch
+git push origin
+
+creation de la v2 
+git pull origin master
+git checkout master
+
+creation dossier images dans le master 
+
+mkdir images
+
+git add images
+git commit -m "ajt images"
+git push  origin master 
+
+git pull origin master 
+git checkout origin master
+git branch mobile_css_branch_2
+git checkout mobile_css_branch_2
+cd css
+nano mobile.css
+git add mobile.css
+git commit -m "maj mobile"
+git push origin mobile_css_branch_2
+
+git checkout origin master
+git merge mobile_css_branch_2
+git pull origin master
+git push origin master
+
+creation branche pour ajouter mon fichier txt avec mes commande 
+
+
+git checkout origin master
+
+
+git checkout -b commandejuan
+touch galindo.txt
+nano galindo.txt
+git add galindo.txt
+git commit -m "commande du tp juan"
+git push origin master
+git checkout origin master
+git merge commande juan
+git push origin master
