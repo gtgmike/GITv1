@@ -1,6 +1,7 @@
 git config user.name ""
 git config user.email ""
 git checkout -b htmlA
+nano index.html
 git add index.html
 git commit -m ""
 git push origin htmlA
@@ -14,7 +15,8 @@ git pull origin master
 git status
 git push origin master
 git checkout-b htmlB
-git add html/prduits.html
+nano produits
+git add html/produits.html
 git add index.html
 git commit -m ""
 git push origin htmlB
