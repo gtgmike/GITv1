@@ -1,0 +1,32 @@
+git config user.name ""
+git config user.email ""
+git checkout -b htmlA
+git add index.html
+git commit -m ""
+git push origin htmlA
+git checkout master
+git merge htmlA
+git pull origin master
+git config pull.rebase false
+git config pull.rebase true
+git config pull.ff only
+git pull origin master
+git status
+git push origin master
+git checkout-b htmlB
+git add html/prduits.html
+git add index.html
+git commit -m ""
+git push origin htmlB
+git checkout master
+git merge htmlB
+git rm html/index.html
+git merge htmlB
+git status
+git rebase --continue
+git add html/prduits.html
+git commit -m ""
+git rebase --continue
+git merge htmlB
+git pull origin master
+git push origin master
